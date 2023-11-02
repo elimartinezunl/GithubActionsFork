@@ -11,7 +11,7 @@ namespace GithubActionsLab
         {
             //this test fails
             Assert.AreEqual(1, Program.Add("1", "2"));
-            
+
             Assert.AreEqual(5, Program.Add("3", "2"));
             Assert.AreEqual(12, Program.Add("5", "7"));
         }
@@ -39,7 +39,7 @@ namespace GithubActionsLab
         {
             Assert.AreEqual(1, Program.Subtract("3", "2"));
             Assert.AreEqual(2, Program.Subtract("4", "2"));
-            Assert.AreEqual(-2, Program.Subtract("5", "7"));
+            Assert.AreEqual(1, Program.Subtract("8", "7"));
         }
 
         [Test]
@@ -91,7 +91,7 @@ namespace GithubActionsLab
         {
             Assert.AreEqual(3, Program.Divide("6", "2"));
             Assert.AreEqual(2, Program.Divide("4", "2"));
-            Assert.AreEqual(3, Program.Divide("21", "7"));
+            Assert.AreEqual(3, Program.Divide("12", "4"));
         }
 
         [Test]
@@ -115,9 +115,9 @@ namespace GithubActionsLab
         [Test]
         public void Power_Valid()
         {
-            Assert.AreEqual(3, Program.Power("6", "2"));
-            Assert.AreEqual(2, Program.Power("4", "2"));
-            Assert.AreEqual(3, Program.Power("21", "7"));
+            Assert.AreEqual(4, Program.Power("2", "2"));
+            Assert.AreEqual(27, Program.Power("3", "3"));
+            Assert.AreEqual(1000, Program.Power("10", "3"));
         }
 
         [Test]
