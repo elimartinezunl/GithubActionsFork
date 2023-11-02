@@ -7,7 +7,7 @@ namespace GithubActionsLab
     public class Math
     {
         [Test]
-        public void Add_Valid()
+        public void Add_Valid_Martinez()
         {
             //this test fails
             Assert.AreEqual(1, Program.Add("1", "2"));
@@ -17,7 +17,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Invalid()
+        public void Add_Invalid_Martinez()
         {
             Assert.Throws<FormatException>(() => Program.Add("1", "a"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
@@ -25,7 +25,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Add_Null()
+        public void Add_Null_Martinez()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Add("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Add(null, "1"));
@@ -35,7 +35,7 @@ namespace GithubActionsLab
 
 
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_Valid_Martinez()
         {
             Assert.AreEqual(1, Program.Subtract("3", "2"));
             Assert.AreEqual(2, Program.Subtract("4", "2"));
@@ -43,7 +43,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Invalid()
+        public void Subtract_Invalid_Martinez()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -51,7 +51,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Subtract_Null()
+        public void Subtract_Null_Martinez()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -61,7 +61,7 @@ namespace GithubActionsLab
 
 
         [Test]
-        public void Multiply_Valid()
+        public void Multiply_Valid_Martinez()
         {
             Assert.AreEqual(6, Program.Multiply("3", "2"));
             Assert.AreEqual(8, Program.Multiply("4", "2"));
@@ -69,7 +69,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid()
+        public void Multiply_Invalid_Martinez()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -77,7 +77,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null()
+        public void Multiply_Null_Martinez()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -87,7 +87,7 @@ namespace GithubActionsLab
 
 
         [Test]
-        public void Divide_Valid()
+        public void Divide_Valid_Martinez()
         {
             Assert.AreEqual(3, Program.Divide("6", "2"));
             Assert.AreEqual(2, Program.Divide("4", "2"));
@@ -95,7 +95,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Invalid()
+        public void Divide_Invalid_Martinez()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -103,7 +103,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_Null()
+        public void Divide_Null_Martinez()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -113,7 +113,7 @@ namespace GithubActionsLab
 
 
         [Test]
-        public void Power_Valid()
+        public void Power_Valid_Martinez()
         {
             Assert.AreEqual(4, Program.Power("2", "2"));
             Assert.AreEqual(27, Program.Power("3", "3"));
@@ -121,7 +121,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Invalid()
+        public void Power_Invalid_Martinez()
         {
             Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
@@ -129,7 +129,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Power_Null()
+        public void Power_Null_Martinez()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
